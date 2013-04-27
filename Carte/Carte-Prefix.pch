@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'Carte' target in the 'Carte' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifndef iPhone5
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#endif
+
+#ifndef H460
+#define H460 iPhone5?(460+88):460
+#endif
+
+#define degreesToRadians(x) (M_PI*(x)/180.0)
+
+#define HAIBO 1
+
+//Key: qMzu0DxBpk2pUZN5dl8N1w
+//qviary
+//Secret: zZhbZGuv80GDT9h1EowrDg

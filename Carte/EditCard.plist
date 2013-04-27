@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>0</string>
+		<key>name</key>
+		<dict>
+			<key>title</key>
+			<string>姓名</string>
+			<key>tag</key>
+			<string>2400</string>
+		</dict>
+		<key>Job</key>
+		<dict>
+			<key>title</key>
+			<string>职位</string>
+			<key>tag</key>
+			<string>2401</string>
+		</dict>
+	</dict>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>1</string>
+			<key>title</key>
+			<string>手机</string>
+			<key>tag</key>
+			<string>2402</string>
+			<key>placeholder</key>
+			<string>请输入手机号</string>
+		</dict>
+	</array>
+	<array/>
+	<array/>
+</array>
+</plist>

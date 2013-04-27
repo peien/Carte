@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Address" representedClassName="Address" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="card" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Card" inverseName="address" inverseEntity="Card" syncable="YES"/>
+    </entity>
+    <entity name="Card" representedClassName="Card" syncable="YES">
+        <attribute name="another" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email0" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax0" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id2Cus" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="job" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile0" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="needReply" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="qq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tele0" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tele1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tele2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="viewed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="wangwang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="web" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="address" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="card" inverseEntity="Address" syncable="YES"/>
+        <relationship name="cardTemplate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CardTemplate" inverseName="card" inverseEntity="CardTemplate" syncable="YES"/>
+        <relationship name="group" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="card" inverseEntity="Group" syncable="YES"/>
+    </entity>
+    <entity name="CardTemplate" representedClassName="CardTemplate" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="card" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="cardTemplate" inverseEntity="Card" syncable="YES"/>
+        <relationship name="detail" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CardTemplateDetail" inverseName="cardTempalte" inverseEntity="CardTemplateDetail" syncable="YES"/>
+    </entity>
+    <entity name="CardTemplateDetail" representedClassName="CardTemplateDetail" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="cardTempalte" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CardTemplate" inverseName="detail" inverseEntity="CardTemplate" syncable="YES"/>
+        <relationship name="styles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TemplateItemStyle" inverseName="cardTemplate" inverseEntity="TemplateItemStyle" syncable="YES"/>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="card" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Card" inverseName="group" inverseEntity="Card" syncable="YES"/>
+    </entity>
+    <entity name="SyncMark" representedClassName="SyncMark" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TemplateItemStyle" representedClassName="TemplateItemStyle" syncable="YES">
+        <attribute name="colorBlue" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="colorGreen" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="colorRed" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="fontName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fontSize" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="left" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cardTemplate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CardTemplateDetail" inverseName="styles" inverseEntity="CardTemplateDetail" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Address" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Card" positionX="160" positionY="192" width="128" height="510"/>
+        <element name="CardTemplate" positionX="322" positionY="198" width="128" height="120"/>
+        <element name="CardTemplateDetail" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Group" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="SyncMark" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="TemplateItemStyle" positionX="72" positionY="99" width="128" height="195"/>
+    </elements>
+</model>

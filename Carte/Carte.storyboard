@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="B2e-Bn-pv7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Swap Card View Controller - 交换名片-->
+        <scene sceneID="ifu-j5-SKd">
+            <objects>
+                <viewController id="Gbk-1d-dEX" customClass="KHHSwapCardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rzx-5a-J8G">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="交换名片" id="ZLl-4Q-YoH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abF-Ef-4g7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="-636"/>
+        </scene>
+        <!--Contact View Controller - 联系人-->
+        <scene sceneID="64j-8E-gFj">
+            <objects>
+                <viewController id="D4R-QE-J18" customClass="KHHContactViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLG-Vg-d60">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="联系人" id="YZJ-B8-MGG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbj-Xm-3z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="52"/>
+        </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="FC9-kp-mYD">
+            <objects>
+                <viewController restorationIdentifier="" storyboardIdentifier="ActivityViewCon" id="vDz-bn-Z1E" customClass="KHHActivityViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ActivityView" id="ca5-8O-3Je">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="LoginImage_normal@2x.jpg" id="wDm-ne-DU4">
+                                <rect key="frame" x="0.0" y="-20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="startnew_logo@2x.png" id="98Y-MX-pGE">
+                                <rect key="frame" x="34" y="20" width="235" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" id="GoW-C9-CFK">
+                                <rect key="frame" x="150" y="373" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oSq-I4-7wz">
+                                <rect key="frame" x="57" y="401" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="GoW-C9-CFK" id="5N6-vL-5ZX"/>
+                        <outlet property="textLabel" destination="oSq-I4-7wz" id="w4N-bZ-MHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngr-uk-z7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1872" y="1501"/>
+        </scene>
+        <!--Setting View Controller - 设置-->
+        <scene sceneID="LgF-Yn-Wdu">
+            <objects>
+                <viewController id="kzZ-O2-cfF" customClass="KHHSettingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="prB-ho-Wka">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="YWZ-hN-D1d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrN-SQ-H4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="1388"/>
+        </scene>
+        <!--Navi View Controller To Use-->
+        <scene sceneID="Eml-Hz-rqU">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="xDv-Xo-bdY" customClass="NaviViewControllerToUse" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_setting.png" id="X5O-XG-jGf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zOt-hd-dI1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kzZ-O2-cfF" kind="relationship" relationship="rootViewController" id="Bym-QY-7BP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPb-zZ-LEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-547" y="1388"/>
+        </scene>
+        <!--Navi View Controller To Use-->
+        <scene sceneID="CID-z5-RlN">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="bW4-zg-4DQ" customClass="NaviViewControllerToUse" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_contacts.png" id="a5d-Nu-vJR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGy-MD-Chi">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D4R-QE-J18" kind="relationship" relationship="rootViewController" id="oR0-Z5-21v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlz-D1-DsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="44"/>
+        </scene>
+        <!--Navi View Controller To Use-->
+        <scene sceneID="rlT-G0-Pf2">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Ujw-Zm-AC5" customClass="NaviViewControllerToUse" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_exchange.png" id="U9h-G7-D8j"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Szh-zp-aaY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gbk-1d-dEX" kind="relationship" relationship="rootViewController" id="wFQ-GJ-39s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnv-Tc-kmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="-636"/>
+        </scene>
+        <!--My Card Edit View Controller - 我的名片-->
+        <scene sceneID="cyc-uX-6XD">
+            <objects>
+                <viewController id="yHf-nZ-K3a" customClass="KHHMyCardEditViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NfE-0Y-XeR">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的名片" id="wmV-6K-Iem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xab-Jt-MJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="731"/>
+        </scene>
+        <!--Navi View Controller To Use-->
+        <scene sceneID="5L9-2R-Fms">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Bxr-cu-Nv4" customClass="NaviViewControllerToUse" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_card.png" id="UHx-kQ-FAg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="68B-g9-oIz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yHf-nZ-K3a" kind="relationship" relationship="rootViewController" id="cSX-9U-4Wy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0i-Jm-z6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-539" y="731"/>
+        </scene>
+        <!--Navi View Controller To Use-->
+        <scene sceneID="AZA-xf-quZ">
+            <objects>
+                <navigationController storyboardIdentifier="AccountViewCon" definesPresentationContext="YES" id="wSl-Wz-KCG" customClass="NaviViewControllerToUse" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j0Q-5y-cpT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pwg-ET-ju3" kind="relationship" relationship="rootViewController" id="5hd-iA-Rk2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1h-oO-eGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1962" y="-450"/>
+        </scene>
+        <!--Start Up View Controller-->
+        <scene sceneID="pnK-3j-vFJ">
+            <objects>
+                <viewController id="B2e-Bn-pv7" customClass="KHHStartUpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBa-le-GmR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Kf-ii-x8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2497" y="294"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="n69-3f-tr7">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewCon" id="pwg-ET-ju3" customClass="KHHLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="guY-fh-8Y3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aK3-bi-e6F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylx-uv-eoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1366" y="-456"/>
+        </scene>
+        <!--Main Tab View Controller-->
+        <scene sceneID="8ns-4E-xNl">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTab" definesPresentationContext="YES" hidesBottomBarWhenPushed="YES" id="92R-m7-0bR" customClass="KHHMainTabViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="c6s-eF-dIy">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ujw-Zm-AC5" kind="relationship" relationship="viewControllers" id="tAn-Q7-8u5"/>
+                        <segue destination="bW4-zg-4DQ" kind="relationship" relationship="viewControllers" id="mOv-wo-4aG"/>
+                        <segue destination="Bxr-cu-Nv4" kind="relationship" relationship="viewControllers" id="5YZ-7E-wzf"/>
+                        <segue destination="xDv-Xo-bdY" kind="relationship" relationship="viewControllers" id="6Hg-lm-5aa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tul-Nx-CE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1135" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginImage_normal@2x.jpg" width="640" height="1067"/>
+        <image name="startnew_logo@2x.png" width="640" height="419"/>
+        <image name="tab_card.png" width="16" height="16"/>
+        <image name="tab_contacts.png" width="16" height="16"/>
+        <image name="tab_exchange.png" width="16" height="16"/>
+        <image name="tab_setting.png" width="16" height="16"/>
+    </resources>
+    <classes>
+        <class className="KHHActivityViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHActivityViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activity" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="KHHContactViewController" superclassName="KHHViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHContactViewController.h"/>
+        </class>
+        <class className="KHHEditCardViewController" superclassName="KHHViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHEditCardViewController.h"/>
+        </class>
+        <class className="KHHLoginViewController" superclassName="KHHViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHLoginViewController.h"/>
+        </class>
+        <class className="KHHMainTabViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHMainTabViewController.h"/>
+        </class>
+        <class className="KHHMyCardEditViewController" superclassName="KHHEditCardViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHMyCardEditViewController.h"/>
+        </class>
+        <class className="KHHSettingViewController" superclassName="KHHViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHSettingViewController.h"/>
+        </class>
+        <class className="KHHStartUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHStartUpViewController.h"/>
+        </class>
+        <class className="KHHSwapCardViewController" superclassName="KHHViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHSwapCardViewController.h"/>
+        </class>
+        <class className="KHHViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KHHViewController.h"/>
+        </class>
+        <class className="NaviViewControllerToUse" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NaviViewControllerToUse.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
